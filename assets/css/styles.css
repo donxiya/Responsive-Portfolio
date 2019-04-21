@@ -29,6 +29,11 @@ image{
 	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
+  	-webkit-animation-name: movedown;
+  	-webkit-animation-duration: 2s;
+  	animation-name: movedown;
+ 	animation-duration: 2s;
 	}
 	
 .name{
@@ -559,3 +564,12 @@ hr {
 
 		
 				}
+@-webkit-keyframes movedown {
+	0%   {top: -100px;}
+	100% {top: 0px;}
+	}
+	
+@keyframes movedown {
+0%   {top:-100px;}
+100% {top:0px;}
+}
